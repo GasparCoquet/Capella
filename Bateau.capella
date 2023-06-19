@@ -54,7 +54,21 @@
       <ownedRolePkg xsi:type="org.polarsys.capella.core.data.oa:RolePkg" id="4645eafb-b6a9-4761-854d-595c0593f4cd"
           name="Roles"/>
       <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="1c7d51d7-d505-4546-bf82-4860c5171dd0"
-          name="Operational Entities"/>
+          name="Operational Entities">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="34f8549f-efa2-4773-b1e5-116566ebb95b"
+            name="Passager" abstractType="#f8d8336d-37e6-4a1e-ac81-8a8b063d1406"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="dab1f398-bfdf-4ea9-b5a4-faf5d0489803"
+            name="Bureau d'études Conception" abstractType="#d002c827-1e20-483f-ab7d-d8ade940b863"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="f8d8336d-37e6-4a1e-ac81-8a8b063d1406"
+            name="Passager" actor="true" human="true"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="d002c827-1e20-483f-ab7d-d8ade940b863"
+            name="Bureau d'études Conception">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="aea8230e-e211-4d4a-b136-8829d8593710"
+              name="Usine de fabrication" abstractType="#a4592a8a-10be-48e2-9c17-90160f002252"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="a4592a8a-10be-48e2-9c17-90160f002252"
+              name="Usine de fabrication"/>
+        </ownedEntities>
+      </ownedEntityPkg>
     </ownedArchitectures>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
         id="43df36b9-e4db-4d54-9e84-c463bceec14f" name="System Analysis">
