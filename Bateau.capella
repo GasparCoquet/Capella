@@ -55,18 +55,49 @@
           name="Roles"/>
       <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="1c7d51d7-d505-4546-bf82-4860c5171dd0"
           name="Operational Entities">
-        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="34f8549f-efa2-4773-b1e5-116566ebb95b"
-            name="Passager" abstractType="#f8d8336d-37e6-4a1e-ac81-8a8b063d1406"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="c6d1cde0-1922-43e2-97e2-ca392d24348d"
+            name="Lac" abstractType="#07764014-383e-4e48-bb8f-d295f46137d7"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="dab1f398-bfdf-4ea9-b5a4-faf5d0489803"
-            name="Bureau d'études Conception" abstractType="#d002c827-1e20-483f-ab7d-d8ade940b863"/>
-        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="f8d8336d-37e6-4a1e-ac81-8a8b063d1406"
-            name="Passager" actor="true" human="true"/>
+            name="Office tourisme" abstractType="#d002c827-1e20-483f-ab7d-d8ade940b863"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="07764014-383e-4e48-bb8f-d295f46137d7"
+            name="Lac">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="86b1c70e-3fc2-454c-83be-133554feb1fc"
+              name="Points de départ/arrivée" abstractType="#9fb9b5d1-10d5-4e4a-899f-2266a366ea45"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="9fb9b5d1-10d5-4e4a-899f-2266a366ea45"
+              name="Points de départ/arrivée">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="421449b2-8a5c-4152-84db-5342be849c0c"
+                name="Ville D" abstractType="#18d6e57f-f912-4835-a9df-fa315474fda3"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c9ff62b1-d860-4edf-acab-ba9c24f0674e"
+                name="Ville B" abstractType="#7c16fd5f-8bdf-44c9-8f91-7614c85e8620"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="64096cb4-ef6c-46e3-80e1-63c4c828891c"
+                name="Ville C" abstractType="#a3ba2117-d2f1-40fa-82ca-54e7df5a8b5c"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="01cfb85b-82d8-4ff0-b047-977ac1bfe739"
+                name="Ville A" abstractType="#ed4526fd-5aed-45ca-bf44-951eaf4011a9"/>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="18d6e57f-f912-4835-a9df-fa315474fda3"
+                name="Ville D"/>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="7c16fd5f-8bdf-44c9-8f91-7614c85e8620"
+                name="Ville B"/>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="a3ba2117-d2f1-40fa-82ca-54e7df5a8b5c"
+                name="Ville C"/>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="ed4526fd-5aed-45ca-bf44-951eaf4011a9"
+                name="Ville A"/>
+          </ownedEntities>
+        </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="d002c827-1e20-483f-ab7d-d8ade940b863"
-            name="Bureau d'études Conception">
-          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="aea8230e-e211-4d4a-b136-8829d8593710"
-              name="Usine de fabrication" abstractType="#a4592a8a-10be-48e2-9c17-90160f002252"/>
-          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="a4592a8a-10be-48e2-9c17-90160f002252"
-              name="Usine de fabrication"/>
+            name="Office tourisme">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="86951f2b-7a0f-4762-8e63-36a586e436c6"
+              name="Voyageurs" abstractType="#61988dae-3ec3-4c9c-b14b-a169f7023ce9"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="61988dae-3ec3-4c9c-b14b-a169f7023ce9"
+              name="Voyageurs">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="84bc3af5-451c-4a72-93c5-5f73d241a49a"
+                name="Habitants" abstractType="#c2edfefa-e4c9-4ae2-8254-2e5514ef9768"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="62cb0d4a-e6ea-4fc1-a154-d86eaa140342"
+                name="Touristes" abstractType="#05d24d2f-41e6-409a-9995-52375bdbab97"/>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c2edfefa-e4c9-4ae2-8254-2e5514ef9768"
+                name="Habitants" actor="true" human="true"/>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="05d24d2f-41e6-409a-9995-52375bdbab97"
+                name="Touristes" actor="true" human="true"/>
+          </ownedEntities>
         </ownedEntities>
       </ownedEntityPkg>
     </ownedArchitectures>
